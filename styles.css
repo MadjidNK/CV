@@ -1,0 +1,769 @@
+/* Styles Généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* Jaune vif */
+    overflow-x: hidden;
+}
+
+/* Header (Logo seulement) */
+.logo a {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: inherit; /* Garde la couleur du texte du logo */
+}
+
+.logo a:hover {
+    opacity: 0.8; /* Effet léger au survol */
+}
+
+.logo {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Centre le conteneur si nécessaire */
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo span {
+    color: #666;
+}
+
+/* Section Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero span {
+    font-size: 52px;
+    color: #000;
+}
+
+/* Graphique Incliné */
+.graphic {
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(135deg, #FFF 60%, #4CAF50 60%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    border-radius: 50px;
+    z-index: -1;
+}
+
+/* Section Photo */
+.photo-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.photo-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icônes sous la photo */
+.icons-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.service {
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service a:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Bulle de Contact */
+.contact-bubble {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: #FFF;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.contact-bubble a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-bubble:hover {
+    background-color: #388E3C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .graphic {
+        width: 300px;
+        height: 60px;
+    }
+
+    .photo-section img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .icons-section {
+        gap: 20px;
+    }
+
+    .service {
+        font-size: 14px;
+    }
+
+    .contact-bubble {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
+}
+/* Chronologie des expériences */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Titre des expériences professionnelles */
+.experiences-title {
+    text-align: center; /* Centrage du titre */
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; /* Couleur noire pour correspondre à BPI France */
+    margin: 40px 0; /* Espacement autour du titre */
+}
+
+
+/* Expériences individuelles */
+.experience {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajustement spécifique pour CHARITY CUP */
+.experience.charity {
+    position: relative; /* Positionnement relatif */
+    left: 20%; /* Décale cette carte de 15% vers la droite */
+    width: 55%; /* Légèrement plus large pour attirer l'attention */
+}
+
+/* Titres et détails des expériences */
+.experience h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.experience h2 span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+.experience h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #555;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Expériences individuelles avec logo */
+.experience {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex; /* Disposition en ligne */
+    align-items: center;
+    gap: 20px; /* Espacement entre le logo et le texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alignement du texte à gauche */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Section du logo */
+.experience .logo-container {
+    flex-shrink: 0; /* Empêche le logo de rétrécir */
+    width: 80px; /* Largeur du conteneur de logo */
+    height: 80px; /* Hauteur fixe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Forme circulaire */
+    overflow: hidden; /* Cache les débordements d'image */
+}
+
+/* Image du logo */
+.experience .logo-container img {
+    max-width: 100%; /* Redimensionne l'image pour s'adapter */
+    max-height: 100%;
+    object-fit: contain; /* Adapte l'image sans déformation */
+}
+
+/* Section du contenu texte */
+.experience .content {
+    flex-grow: 1; /* Prend tout l'espace restant */
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+/* Titre des formations */
+.formations-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000; /* Couleur noire comme BPI FRANCE */
+    margin: 40px 0; /* Espacement autour du titre */
+}
+
+/* Section Formations */
+.formations {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Formation individuelle */
+.formation {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo de l'école */
+.formation .logo-container {
+    flex-shrink: 0; /* Empêche le logo de rétrécir */
+    width: 120px; /* Largeur du logo */
+    height: 120px; /* Hauteur du logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Forme circulaire */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de survol */
+    overflow: hidden; /* Masque l'excédent du logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour effet survol */
+}
+
+.formation .logo-container:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée au survol */
+}
+
+.formation .formation-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Préserve les proportions de l'image */
+}
+
+/* Titre de chaque formation */
+.formation h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Couleur verte pour les titres */
+    margin-bottom: 10px;
+}
+
+/* Institution et date */
+.formation .institution {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.formation .date {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Liste des modules */
+.formation .modules {
+    list-style-type: none;
+    padding: 0;
+}
+
+.formation .modules li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+/* Styles Généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* Jaune vif */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; /* Noir pour le titre */
+}
+
+/* Conteneur des compétences */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Carte de chaque compétence */
+.skill-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #4CAF50; /* Bordure verte */
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Effet au survol */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card:hover h3 {
+    color: #FFD700; /* Couleur jaune lors du survol */
+}
+
+/* Réactivité mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        font-size: 20px;
+    }
+}
+/* Styles Généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* Jaune vif */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header avec positionnement du logo à droite */
+header {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; /* Noir pour le titre */
+}
+
+/* Conteneur des centres d'intérêt */
+.interests {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Carte de chaque centre d'intérêt */
+.interest-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #4CAF50; /* Bordure verte */
+    position: relative;
+}
+
+/* Ajout de l'image uniquement pour la carte Football */
+.football .football-image,
+.volley .volley-image,
+.musculation .musculation-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.football:hover .football-image {
+    opacity: 1;
+    background-image: url('images/football-image.jpg'); /* Lien vers l'image football */
+}
+
+.volley:hover .volley-image {
+    opacity: 1;
+    background-image: url('images/volley-image.jpg'); /* Lien vers l'image volley */
+}
+
+.musculation:hover .musculation-image {
+    opacity: 1;
+    background-image: url('images/musculation-image.jpg'); /* Lien vers l'image musculation */
+}
+
+/* Effet au survol */
+.interest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.interest-card:hover h3 {
+    color: #FFD700; /* Couleur jaune lors du survol */
+}
+
+/* Réactivité mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .interests {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .interest-card {
+        padding: 20px;
+    }
+
+    .interest-card h3 {
+        font-size: 20px;
+    }
+}
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFD700; /* Jaune vif */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header avec logo à droite */
+header {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; /* Noir */
+}
+
+/* Conteneur des langues */
+.languages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Conteneur des langues */
+.languages {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex-wrap: wrap; /* Gère les débordements en mode responsive */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Carte pour chaque langue */
+.language-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #4CAF50; /* Bordure verte */
+    position: relative;
+    width: 300px; /* Largeur fixe pour uniformiser */
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4CAF50; /* Vert */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.language-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.criteria {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.criteria h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.criteria-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour les critères */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.criterion {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.value {
+    color: #555;
+    font-style: italic;
+}
+
+/* Conteneur du QR code */
+.qr-code-container {
+    text-align: center; /* Centre le contenu à l'intérieur du conteneur */
+    margin-top: 50px; /* Ajuste l'espacement au besoin */
+}
+
+/* Style du QR code */
+.qr-code {
+    width: 200px; /* Ajuste la taille du QR code */
+    height: 200px;
+    object-fit: contain; /* Assure que l'image s'adapte sans déformation */
+    display: block; /* Assure que l'image est un bloc centré */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+/* Légende sous le QR code */
+.qr-code-legend {
+    font-size: 16px; /* Taille de la légende */
+    color: #555; /* Couleur de la légende */
+    margin-top: 10px; /* Espacement entre le QR code et la légende */
+    font-weight: normal;
+}
+.contact-info {
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: 20px; /* Ajuste l'espacement au besoin */
+}
+
+.contact-info p {
+    font-size: 18px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    font-weight: normal; /* Poids de la police */
+}
