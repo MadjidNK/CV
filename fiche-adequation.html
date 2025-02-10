@@ -19,95 +19,42 @@
         
         <section class="criteria">
             <h2>Critères de Compétences</h2>
-            <form action="#">
-                <!-- Critère 1 -->
-                <div class="criterion">
-                    <label for="criterion1">Critère 1 :</label>
-                    <input type="text" id="criterion1" name="criterion1" placeholder="Décrire le critère" required>
-
-                    <label for="criterion1_level">Niveau d'adéquation :</label>
-                    <select id="criterion1_level" name="criterion1_level" required>
-                        <option value="not_applicable">Non applicable</option>
-                        <option value="low">Faible</option>
-                        <option value="medium">Moyen</option>
-                        <option value="high">Élevé</option>
-                    </select>
-
-                    <label for="criterion1_description">Description de l'adéquation :</label>
-                    <textarea id="criterion1_description" name="criterion1_description" placeholder="Décrire l'adéquation pour ce critère" required></textarea>
-                </div>
-
-                <!-- Critère 2 -->
-                <div class="criterion">
-                    <label for="criterion2">Critère 2 :</label>
-                    <input type="text" id="criterion2" name="criterion2" placeholder="Décrire le critère" required>
-
-                    <label for="criterion2_level">Niveau d'adéquation :</label>
-                    <select id="criterion2_level" name="criterion2_level" required>
-                        <option value="not_applicable">Non applicable</option>
-                        <option value="low">Faible</option>
-                        <option value="medium">Moyen</option>
-                        <option value="high">Élevé</option>
-                    </select>
-
-                    <label for="criterion2_description">Description de l'adéquation :</label>
-                    <textarea id="criterion2_description" name="criterion2_description" placeholder="Décrire l'adéquation pour ce critère" required></textarea>
-                </div>
-
-                <!-- Critère 3 -->
-                <div class="criterion">
-                    <label for="criterion3">Critère 3 :</label>
-                    <input type="text" id="criterion3" name="criterion3" placeholder="Décrire le critère" required>
-
-                    <label for="criterion3_level">Niveau d'adéquation :</label>
-                    <select id="criterion3_level" name="criterion3_level" required>
-                        <option value="not_applicable">Non applicable</option>
-                        <option value="low">Faible</option>
-                        <option value="medium">Moyen</option>
-                        <option value="high">Élevé</option>
-                    </select>
-
-                    <label for="criterion3_description">Description de l'adéquation :</label>
-                    <textarea id="criterion3_description" name="criterion3_description" placeholder="Décrire l'adéquation pour ce critère" required></textarea>
-                </div>
-                <!-- Critère 4 -->
-                <div class="criterion">
-                    <label for="criterion4">Critère 4 :</label>
-                    <input type="text" id="criterion4" name="criterion4" placeholder="Décrire le critère" required>
-
-                    <label for="criterion4_level">Niveau d'adéquation :</label>
-                    <select id="criterion4_level" name="criterion4_level" required>
-                        <option value="not_applicable">Non applicable</option>
-                        <option value="low">Faible</option>
-                        <option value="medium">Moyen</option>
-                        <option value="high">Élevé</option>
-                    </select>
-
-                    <label for="criterion4_description">Description de l'adéquation :</label>
-                    <textarea id="criterion4_description" name="criterion4_description" placeholder="Décrire l'adéquation pour ce critère" required></textarea>
-                </div>
-                <!-- Critère 5 -->
-                <div class="criterion">
-                    <label for="criterion5">Critère 5 :</label>
-                    <input type="text" id="criterion5" name="criterion5" placeholder="Décrire le critère" required>
-
-                    <label for="criterion5_level">Niveau d'adéquation :</label>
-                    <select id="criterion5_level" name="criterion5_level" required>
-                        <option value="not_applicable">Non applicable</option>
-                        <option value="low">Faible</option>
-                        <option value="medium">Moyen</option>
-                        <option value="high">Élevé</option>
-                    </select>
-
-                    <label for="criterion5_description">Description de l'adéquation :</label>
-                    <textarea id="criterion5_description" name="criterion5_description" placeholder="Décrire l'adéquation pour ce critère" required></textarea>
-                </div>
-                
-
-                <!-- Ajouter plus de critères si nécessaire -->
-
-               <button type="submit">Soumettre</button>
-            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Niveau d'Adéquation</th>
+                        <th>Détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gestion de projet</td>
+                        <td>Élevé</td>
+                        <td>Expérience en gestion de projet Agile et Scrum.</td>
+                    </tr>
+                    <tr>
+                        <td>Analyse financière</td>
+                        <td>Moyen</td>
+                        <td>Capacité à analyser des bilans et comptes de résultat.</td>
+                    </tr>
+                    <tr>
+                        <td>Maîtrise d'Excel</td>
+                        <td>Faible</td>
+                        <td>Connaissances de base en formules et tableaux croisés.</td>
+                    </tr>
+                    <tr>
+                        <td>Programmation en Python</td>
+                        <td>Élevé</td>
+                        <td>Développement de scripts d'automatisation et d'analyse de données.</td>
+                    </tr>
+                    <tr>
+                        <td>Communication écrite</td>
+                        <td>Moyen</td>
+                        <td>Bonne capacité de rédaction de rapports et de synthèses.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
     </main>
